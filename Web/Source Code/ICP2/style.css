@@ -1,0 +1,31 @@
+body {
+    background-color: lightcyan;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 70px 0;
+    justify-content: space-evenly;
+    position: absolute;
+}
+
+.item {
+    display: block;
+    height: 70px;
+    width : 70px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+
+.column {
+    width: 10%;
+    padding: 5px;
+}
