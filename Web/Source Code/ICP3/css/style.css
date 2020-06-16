@@ -1,0 +1,20 @@
+/* this is to import a font from google fonts and use it in my page */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html, body {
+    background-image: url("../images/background1.png");
+    background-size: 20%;
+    background-repeat: repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+img {
+  height: 200px;
+  width: 200px;
+  padding-bottom:10px;
+}
+
+.Csize{
+    font-size: xx-large;
+}

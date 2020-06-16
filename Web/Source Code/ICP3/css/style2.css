@@ -1,0 +1,50 @@
+/* this is to import a font from google fonts and use it in my page */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html, body {
+
+}
+
+#ImageHeader {
+    height: 350px;
+    width: 100%;
+}
+
+#app {
+  height: 250px;
+  width: 300px;
+  padding:10px 10px 10px 10px;
+}
+
+#prof {
+
+}
+
+
+h2{
+    color:#BCBBBB ;
+}
+
+h1, h6, p{
+    color:#747704;
+    /* font-family: 'Orbitron', sans-serif; */
+    /* font-family: 'Play', sans-serif; */
+    /* font-family: 'Rambla', sans-serif; */
+    font-family: 'Lato', sans-serif;
+}
+
+.headings{
+    margin-top: 50px;
+}
+
+.height{
+    height: 100%;
+}
+
+hr {
+  border:  solid #BCBBBB;
+  border-radius: 5px;
+}

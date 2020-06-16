@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ICP3 Task1</title>
+    <meta name="viewport" content="width=device-width" />
+    <!-- including my css style and bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+<!-- This container is to show the images of Rock, Paper, and Scissor and use their function using javascripts -->
+<div class="">
+    <div class="container" style="padding-top:300px;">
+        <div class="row">
+            <div class="col-sm" style="padding-top: 50px">
+                <h1 class="text-center text-danger Csize"> To play</h1>
+                <p class="text-center Csize"> Choose Rock, Paper or Scissor!</p>
+            </div>
+            <div class="col-sm">
+                <img src="./images/Rock.png" id="Rock" onclick=Rock() alt="Rock" >
+            </div>
+            <div class="col-sm">
+                <img src="./images/Paper.png" id="Paper" onclick=Paper() alt="Paper" >
+            </div>
+            <div class="col-sm">
+                <img src="./images/Scissors.png" id="Scissor" onclick=Scissor() alt="Scissor" >
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center" style="padding-top:100px;">
+        <!-- Here will display what the computer chooses getting the result from the javascripts -->
+        <p class="Csize"> Computer Chooses: </p>
+        <P class="text-danger Csize" id="getresult"></P>
+        <!-- here is the result -->
+        <p class="Csize" id="note"></p>
+
+    </div>
+    <!-- including bootstrap's javascripts -->
+    <script src="./scripts/bootstrap.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/java.js"></script>
+</div>
+</body>
+</html>
