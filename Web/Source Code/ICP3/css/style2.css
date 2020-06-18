@@ -19,10 +19,6 @@ html, body {
   padding:10px 10px 10px 10px;
 }
 
-#prof {
-
-}
-
 
 h2{
     color:#BCBBBB ;
@@ -32,16 +28,12 @@ h1, h6, p{
     color:#747704;
     /* font-family: 'Orbitron', sans-serif; */
     /* font-family: 'Play', sans-serif; */
-    /* font-family: 'Rambla', sans-serif; */
-    font-family: 'Lato', sans-serif;
+     font-family: 'Rambla', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
 }
 
 .headings{
     margin-top: 50px;
-}
-
-.height{
-    height: 100%;
 }
 
 hr {

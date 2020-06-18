@@ -1,0 +1,44 @@
+/* this is to import a font from google fonts and use it in my page */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+img {
+  height: auto;
+  width: auto;
+  padding-top: 20px;
+}
+
+#container {
+  width: 1040px;
+  margin: 0px auto;
+  min-height: 750px;
+  text-align: center;
+}
+
+input[type='text'] {
+  height: 1.2em;
+  font-size: 2em;
+  width:50%;
+  padding: 5px;
+}
+
+.search{
+  margin-top: 50%;
+  margin-left: -40%;
+}
+
+.profile {
+  margin-top: 100px;
+  display: block;
+  background-color: purple;
+  text-decoration: none;
+  color: white;
+  font-width: bold;
+  font-size: xx-large;
+}
+
+.profile:hover {
+  background-color: #b300b3;
+}

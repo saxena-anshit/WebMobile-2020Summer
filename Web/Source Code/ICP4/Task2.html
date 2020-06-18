@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ICP4 (Task2)</title>
+    <meta name="viewport" content="width=device-width" />
+    <!-- including my css style and bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body  background="images/background.png">
+<nav class="navbar navbar-light bg-light justify-content-center">
+    <a class="navbar-brand" href="#">Getting GitHub Information</a>
+</nav>
+<div id="container" style="padding-top:100px;">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- This div is to enter the username and call the function Enter() by pressing the button -->
+            <div class="search">
+                <h2>Enter a GitHub username</h2>
+                <input id="username" placeholder="" type="text"></input><br><br>
+                <button type="button" class="btn btn-danger"  onclick=Enter()>Enter</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- This div is to show the information requested from the RESTFuL API -->
+            <div id="profile">
+                <h2 id="login"></h2>
+                <div class="avatar"></div>
+                <div class="information"></div>
+            </div>
+        </div>
+    </div>
+    <!-- including bootstrap's javascripts -->
+    <script src="./scripts/bootstrap.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/java.js"></script>
+</body>
+</html>
