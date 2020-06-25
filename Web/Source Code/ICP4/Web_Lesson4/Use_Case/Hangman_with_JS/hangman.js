@@ -52,14 +52,14 @@ var Hangman = (function () {
                 // Game Over
                 this.showElementByIdWithContent(this.elId + "_end", "GAME OVER!<br/>The word was: " + this.WORD);
                 this.STOPPED = true;
-                return;
+
             }
 
         } else if (this.WORD.indexOf(this.getGuessedfWord()) !== -1) {
             // Victory
             this.showElementByIdWithContent(this.elId + "_end", "You made it!<br/>The word was: " + this.WORD);
             this.STOPPED = true;
-            return;
+
         }
 
     };

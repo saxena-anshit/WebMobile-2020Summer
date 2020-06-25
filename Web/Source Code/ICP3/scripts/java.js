@@ -4,7 +4,7 @@
 */
 
 function getChoice(){
-    var x = document.getElementById("getresult")
+    var x = document.getElementById("getresult");
     var DefaultChoice = Math.random();
     if (DefaultChoice < 0.34){
         x.innerText = "Rock";

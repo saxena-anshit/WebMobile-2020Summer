@@ -1,0 +1,92 @@
+<div class="container border mt-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-auto">
+        <div class="col-auto">
+          <br>
+          <div class="border-bottom">
+          </div>
+          <h3 class="text-center text-info">Search for your recipe!!</h3>
+          <div>
+            <label for = "food-name" class="text-info">Food Name:</label><br>
+            <input type="text" name="food-name" id="food-name" class="form-control" placeholder="Recipe name" [(ngModel)]="recipe">
+          </div>
+          <div>
+            <label for = "food-name" class="text-info">Place Name:</label><br>
+            <input type="text" name="food-name" id="place-name" class="form-control" placeholder="place name" [(ngModel)]="place">
+          </div>
+          <br>
+          <div>
+            <button class="btn btn-info btn-md" (click)="getNutrition()">Submit</button>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row mt-3 ">
+    <div class="col-lg-6 mt-1">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active"><b>How to make</b></a>
+        <div class="panel-body">
+          <div *ngFor="let recipe of recipeList" class="list-group-item clearfix">
+            <table class="table">
+              <thead >
+              <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Energy</th>
+                <th scope="col">Nutrients</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row"><img src="{{recipe.icon}}" style="width: 100px; height: 80px;" align="center"/></th>
+                <td><h4 class="list-group-item-heading"><a href="{{ recipe.shareAs }}" target="_blank">{{ recipe.name }}</a></h4></td>
+                <td> <strong>{{ recipe.calories.toFixed(0) }}</strong></td>
+                <td>
+                  <table class="table">
+                    <tbody>
+                    <tr>
+                      <th scope="row">Protein:</th>
+                      <td >{{ recipe.Protein.toFixed(0) }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Fat:</th>
+                      <td><a>{{ recipe.fat.toFixed(0) }}</a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Carbs:</th>
+                      <td>{{ recipe.carbs.toFixed(0) }}</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 mt-1">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active"><b>Where to go</b></a>
+
+            <div class="panel-body">
+              <div *ngFor="let p of placeList" class="list-group-item clearfix">
+                  <h4 class="list-group-item-heading">{{ p.name }}</h4>
+                  <h4 class="list-group-item-heading">{{ p.address }}</h4>
+                <a href="http://maps.google.com/maps?saddr={{currentLat}},{{currentLng}}
+             &daddr={{p.location.formattedAddress[0]}},{{p.location.formattedAddress[1]}},{{p.location.formattedAddress[2]}}" target="_blank">
+                  <img src="../../assets/google.png" style="width: 30px; height: 30px;"></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+</div>

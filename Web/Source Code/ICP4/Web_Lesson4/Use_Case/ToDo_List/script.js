@@ -1,4 +1,4 @@
-var wishes = ["learn how to use JQuery", "build a website", "Become a Web Developer"]
+var wishes = ["learn how to use JQuery", "build a website", "Become a Web Developer"];
 
 function addToList(item) {
     $('#items').append("<li>" + item + "<span class='label pending'>Pending</span></li>");
