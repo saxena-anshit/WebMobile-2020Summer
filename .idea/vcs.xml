@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Web/Source Code/ICP6/Web_Lesson6/ICE-MashUp/MashUp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Web/Source Code/ICP6/Web_Lesson6/UseCase/MyWiki" vcs="Git" />
   </component>
 </project>

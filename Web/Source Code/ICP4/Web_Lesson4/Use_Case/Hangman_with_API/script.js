@@ -51,7 +51,7 @@ function getSolution(token) {
         for (var i = solution.length - 1; i >= 0; i--) {
             if (hangman_word.charAt(i) != solution.charAt(i)) {
                 error_string = "<span class='error'>" + solution.charAt(i) + "</span>";
-                updated_word = hangman_word
+                updated_word = hangman_word;
                 hangman_word = updated_word.substr(0, i) + error_string + updated_word.substr(i + 1);
             } else {
                 if (hangman_word.indexOf("_") == -1) {
@@ -99,7 +99,7 @@ $(document).ready(function () {
         newGame();
         $('.console').slideToggle(1200);
         $('.letter').focus();
-    })
+    });
 
     $(document).on('click', '#guess', function (e) {
         token = $('.token').text();

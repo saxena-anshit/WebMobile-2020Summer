@@ -1,0 +1,13 @@
+.example-card {
+  max-width: 500px;
+}
+
+.button-row {
+  margin: 10px 0;
+}
+.ml-12, .my-12 {
+  margin-left: 12rem!important;
+}
+.mt-10, .my-10 {
+  margin-top: 10rem!important;
+}
