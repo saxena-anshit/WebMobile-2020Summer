@@ -52,10 +52,8 @@ public class QueryUtils {
             HttpConnection.setConnectTimeout(15000);
             HttpConnection.setRequestMethod("GET");
             HttpConnection.connect();
-//            if( HttpConnection == null){
-//            Toast toast = Toast.makeText(getActivity().getApplicationContext(), "Connection Successful!", Toast.LENGTH_SHORT).show();
-//                Toast.makeText(getApplicationContext(), "Connection Unsuccessful!, please try again", Toast.LENGTH_SHORT).show();            //TODO: 2. Read from the Url Connection and store it as a string(jsonResponse)
-//            }
+
+            //TODO: 2. Read from the Url Connection and store it as a string(jsonResponse)
             StringBuilder response = new StringBuilder();
             InputStream inputStream = HttpConnection.getInputStream();
             InputStreamReader inputStreamReader = new InputStreamReader(inputStream, Charset.forName("UTF-8"));
